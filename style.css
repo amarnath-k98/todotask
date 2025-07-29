@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Volkhov", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, #79d8dd, #00f2fe);
+}
+.container {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+.content{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#entry-list {
+  list-style: none;
+  padding: 10px;
+}
+#entry-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    box-shadow:  0 0 12px rgba(0,0,0,0.1);
+}
+@media screen and (max-width:600px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    form{
+        flex-direction: column;
+    }
+    form input,
+    form select,
+    form button {
+        width: 100%;
+    }
+    #entry-list li{
+        justify-content: space-between;
+        gap: 5px;
+    }
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+}

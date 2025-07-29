@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Moniter</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Moniter</h1>
+        <div class="content">
+            <div>Total Income:Rs.<span id="t-income">0</span></div>
+            <div>Total Expenses:Rs.<span id="t-expense">0</span></div>
+            <div>Net Balance:Rs.<span id="n-bal">0</span></div>
+        </div>
+
+        <form id="form-entry">
+            <input type="text" id="des" placeholder="Description" required/>
+            <input type="number" id="amount" placeholder="Amount" required/>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button type="submit">Add Entry</button>
+            <button type="button" id="reset-btn">Reset</button>
+        </form>
+
+        <div class="filters">
+            <label>
+                <input type="radio" name="filter" value="income"/>Income
+            </label>
+            <label>
+                <input type="radio" name="filter" value="expense"/>Expense
+            </label>
+        </div>
+
+        <ul id="entry-list"></ul>
+
+
+
+        
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
